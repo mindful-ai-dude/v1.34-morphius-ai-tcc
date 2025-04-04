@@ -103,10 +103,8 @@ To use Redis locally follow these comprehensive setup instructions:
    ```bash
    redis-server
    ```
-
-   B. **Start Redis as a background service** (recommended, starts automatically on boot):
    ```bash
-   brew services start redis
+   sudo service redis-server start (codespaces)
    ```
 
 3. **Verify Redis Installation**
@@ -116,7 +114,7 @@ To use Redis locally follow these comprehensive setup instructions:
    ```
 
 4. **Configure Environment Variables**
-   Update your `.env.local` file with:
+   Set your `.env.local` file variables to:
    ```
    ENABLE_SAVE_CHAT_HISTORY=true
    USE_LOCAL_REDIS=true
