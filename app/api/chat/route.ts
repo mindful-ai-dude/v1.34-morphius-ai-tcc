@@ -93,8 +93,8 @@ export async function POST(req: Request) {
     if (messagesHaveImage && isProviderEnabled('google') && !messagesHavePDF) {
       // Find a Gemini model that supports images
       const geminiModel: Model = {
-        id: 'gemini-1.5-flash',
-        name: 'Gemini 1.5 Flash',
+        id: 'gemini-2.0-flash',
+        name: 'Gemini 2.0 Flash',
         provider: 'Google',
         providerId: 'google',
         enabled: true,
